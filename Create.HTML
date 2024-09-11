@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Orders</title>
+  </head>
+  <style>
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      background-color: darkslategray;
+      left: 0;
+      top: 0;
+      display: block;
+      position: fixed;
+      overflow-y: auto;
+      padding-top: 84px;
+      padding-left: 10px;
+      color: aliceblue;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: larger;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
+    }
+
+    .sidebar a:hover {
+      background-color: lightgray;
+      color: black;
+      border-radius: 15px;
+      width:180px;
+    }
+
+    .siteheader {
+      position: fixed;
+      display: flex;
+      margin-top: 0;
+      margin-left: 0;
+      /*  position: absolute; */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      width: 100%;
+      height: 90px;
+      /* padding:10px; */
+      background-color: #333;
+      color: #fff;
+    }
+    .imgs {
+      padding-top: 4px;
+      justify-content: center;
+      text-align: center;
+      width: 10%;
+    }
+    .header {
+      text-align: center;
+      justify-content: center;
+      width: 80%;
+      margin-top: 5px;
+      font-size: small;
+    }
+
+    .content {
+      margin-top: 110px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-left: 360px;
+      font-weight: none;
+      text-align: justify;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      box-shadow: 1px 2px 0.5px #555;
+      width:800px;
+    }
+
+    .form0 {
+
+     /* background-color: #f8f8f8;  */
+      display: flex;
+
+      justify-content: center;
+      flex-wrap: wrap;
+
+      max-width: 850px;
+      margin: auto;
+
+      border-radius: 5px;
+    }
+    .form1,
+    .form2 {
+    
+      margin: 10px;
+      width: 300px;
+      padding: 40px;
+      
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    button {
+      width: 300px;
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 317px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      height: 35px;
+      width: 350px;
+
+      /*   border-radius: 25px; */
+    }
+
+    button:hover {
+      background-color: #555;
+      
+    }
+    .hdr {
+      
+      background-color: #f4f4f4;
+      padding: 5px;
+      margin-left: 250px;
+      margin-right: 250px;
+    }
+  </style>
+
+  <body>
+    <header class="siteheader">
+      <div class="imgs">
+        <img
+          src="pics/ee-brand.png"
+          style="text-align: left; height: 75px; width: 75px"
+        />
+      </div>
+      <div class="header">
+        <h1>Engineering And Environmental Solutions</h1>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <br />
+
+      <h1>Dashboard</h1>
+      <ul>
+        <li>
+          <a href="index.HTML">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="white"
+            >
+              <path
+                d="M12 2L0 12h3v10h18v-10h3L12 2zm0 15h-4v-4h8v4zm4-6H8V4.76L12 4l4 3.24V11zM13 11v6h-2v-6h2z"
+              />
+            </svg>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="ALLorders.HTML">
+            <svg
+              enable-background="new 0 0 64 64"
+              height="24"
+              viewBox="0 0 64 64"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              >
+                <path d="m64 7h-64" />
+                <path d="m64 17h-64" />
+                <path d="m64 27h-64" />
+                <path d="m64 37h-64" />
+                <path d="m64 47h-64" />
+                <path d="m64 57h-64" />
+              </g>
+            </svg>
+            All Orders
+          </a>
+        </li>
+
+        <li>
+          <a href="Create.HTML">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="white"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M16 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8l-4-4zm-1 15H7v-2h8v2zm0-4H7v-2h8v2zm0-4H7V7h8v2z"
+              />
+            </svg>
+            Create New Folder
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="hdr">
+        <h1
+          style="
+            text-align: center;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          "
+        >
+          New Order Form
+        </h1>
+      </div>
+
+      <form>
+        <div class="form0">
+          <div class="form1">
+            <label for="PO"> PO No : </label>
+            <input type="text" class="PO" required /> <br />
+
+            <label for="product"> Product Name : </label>
+            <input type="text" class="product" required /> <br />
+
+            <label for="price"> Price: </label>
+            <input type="text" class="price" required /> <br />
+
+
+            <label for="quantity"> Quantity : </label>
+            <input type="text" class="quantity" required /> <br />
+
+            <label for="firm"> Firm Name : </label>
+            <input type="text" class="firm" required /> <br />
+          </div>
+
+          <div class="form2">
+            <label for="customer"> Customer Name : </label>
+            <input type="text" class="customer" required /> <br />
+
+            <label for="sales"> Sales Person : </label>
+            <input type="text" class="sales" required /> <br />
+
+            <label for="status"> Order Status : </label>
+
+            <select class="status" required>
+              <option value="Pending">Pending</option>
+              <option value="In Production">In Production</option>
+              <option value="Processed">Processed</option>
+              <option value="Packed">Packed</option>
+              <option value="Shipped">Shipped</option>
+            </select>
+            <br />
+
+            <label for="payment"> Payment Status : </label>
+            <input type="text" class="payment" required /> <br />
+          </div>
+
+          <button type="submit">Submit</button><br />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
